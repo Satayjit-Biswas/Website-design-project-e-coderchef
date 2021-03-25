@@ -194,7 +194,53 @@ window.onload = function() {
 //inview js
 $('.service-text').on('inview', function(event, visible) {
     if (visible) {
-        $(this).find('.ml5').each(function () {
+        // service text 
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml5 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+        })
+        .add({
+        targets: '.ml5 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        })
+        .add({
+        targets: '.ml5 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        .add({
+        targets: '.ml5 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        })
+        .add({
+        targets: '.ml5 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        $(this).unbind('inview');
+    }
+});
+
+  //Counter Number
+  $('.counter-area').on('inview', function(event, visible) {
+    if (visible) {
+        $(this).find('.count-up').each(function () {
             var $this = $(this);
             $({ Counter: 0 }).animate({ Counter: $this.text() }, {
                 duration: 1500,
@@ -207,43 +253,48 @@ $('.service-text').on('inview', function(event, visible) {
         $(this).unbind('inview');
     }
 });
-// service text 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml5 .line',
-    opacity: [0.5,1],
-    scaleX: [0, 1],
-    easing: "easeInOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml5 .line',
-    duration: 600,
-    easing: "easeOutExpo",
-    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
-  })
-  .add({
-    targets: '.ml5 .ampersand',
-    opacity: [0,1],
-    scaleY: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=600'
-  })
-  .add({
-    targets: '.ml5 .letters-left',
-    opacity: [0,1],
-    translateX: ["0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=300'
-  })
-  .add({
-    targets: '.ml5 .letters-right',
-    opacity: [0,1],
-    translateX: ["-0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=600'
-  })
-  
+//inview js
+$('.portfolio-area').on('inview', function(event, visible) {
+    if (visible) {
+        // service text 
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml6 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+        })
+        .add({
+        targets: '.ml6 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        })
+        .add({
+        targets: '.ml6 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        .add({
+        targets: '.ml6 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        })
+        .add({
+        targets: '.ml6 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        $(this).unbind('inview');
+    }
+});

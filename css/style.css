@@ -49,7 +49,11 @@ h5{
 	font-family: 'Roboto', sans-serif;
 }
 h3{
-	font-size: 3rem;
+	font-size: 2.8rem;
+}
+h4{
+	font-size: 3.5rem;
+	margin-bottom: 7rem;
 }
 p{
 	font-family: 'Heebo', sans-serif;
@@ -882,8 +886,9 @@ a.nav-link {
 	font-size: 2.5rem;
 }
 .slider-area h2{
-	font-size: 6rem;
+	font-size: 4.5rem;
 	margin: 1.5rem 0;
+	text-transform: uppercase;
 }
 .slider-area .creative{
 	font-size: 2rem;
@@ -968,7 +973,6 @@ a.nav-link {
 .ml5 {
 	position: relative;
 	font-weight: 300;
-	font-size: 4.5em;
 	color: #ffffff;
   }
   
@@ -994,7 +998,6 @@ a.nav-link {
   }
   
   .ml5 .ampersand {
-	font-family: Baskerville, serif;
 	font-style: italic;
 	font-weight: 400;
 	width: 1px;
@@ -1006,17 +1009,106 @@ a.nav-link {
 	display: inline-block;
 	opacity: 0;
   }
+  .our-services{
+	  margin-bottom: 4rem;
+  }
+
   .service-box{
-	  padding: 20px;
+	  padding: 60px 40px;
+	  margin-bottom: 30px;
 	  background-color: rgba(34, 34, 34, 0.311);
+	  transition: .4s;
+  }
+  .service-box i,.service-box h3{
+	transition: .4s;
+  }
+  .service-box:hover{
+	box-shadow: 0px 0px 0px 2px #525252;
+	transform: scale(1.01);
+  }
+  .service-box:hover i,.service-box:hover h3{
+	color: #FFFF00;
   }
   .service-box i{
 	  font-size: 2.8rem;
 	  font-weight: 200;
 	  width: 75px;
 	  height: 75px;
-	  border: 1px solid red;
+	  border: 1px solid #4c4c4cb5;
 	  border-radius: 50px;
 	  text-align: center;
-	  line-height: 70px;
-  }
+	  line-height: 75px;
+	  }
+	  .service-box h3{
+		margin: 2.5rem 0 1.5rem 0;
+	  }
+	  /* counter area  */
+	  .counter-area{
+		  background-position: center;
+		  background-size: cover;
+		  filter: grayscale(6.5);
+	  }
+	  .counter{
+		  padding: 5rem 0;
+		  background-color: rgba(0, 0, 0, 0.80);
+	  }
+	  .counter-box{
+		  margin: 3rem 0;
+		  padding: 3rem;
+		  border: 2px dotted rgb(101, 100, 100); 
+	  }
+	  .counter-box i{
+		  display: block;
+		  font-size: 3.5rem;
+	  }
+	  .counter-box span{
+		font-size: 4rem;
+		display: inline-block;
+		padding: 1rem;
+		margin: 1.4rem 0 1rem 0;
+	  }
+
+
+	  /* portfolio area  */
+	  .ml6 {
+		position: relative;
+		font-weight: 300;
+		color: #ffffff;
+	  }
+	  
+	  .ml6 .text-wrapper {
+		position: relative;
+		display: inline-block;
+		padding-top: 0.1em;
+		padding-right: 0.05em;
+		padding-bottom: 0.15em;
+		line-height: 1em;
+	  }
+	  
+	  .ml6 .line {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		height: 3px;
+		width: 100%;
+		background-color: #ffffff;
+		transform-origin: 0.5 0;
+	  }
+	  
+	  .ml6 .ampersand {
+		font-style: italic;
+		font-weight: 400;
+		width: 1px;
+		margin-right: -0.1em;
+		margin-left: -0.1em;
+	  }
+	  
+	  .ml6 .letters {
+		display: inline-block;
+		opacity: 0;
+	  }
+	  .portfolio-area{
+		  margin-top: 10rem;
+	  }
