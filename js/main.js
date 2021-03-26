@@ -6,6 +6,28 @@
         $('.preloader').delay(500).fadeOut(500);
 
         //02. Isotope Initialize
+        var $grid = $('.grid').isotope({
+            // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+      });
+  
+      // change is-checked class on buttons
+      var $buttonGroup = $('.filters');
+      $buttonGroup.on( 'click', 'li', function( event ) {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        var $button = $( event.currentTarget );
+        $button.addClass('is-checked');
+        var filterValue = $button.attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+  });
+
+
+
+
+
+
+
         function isotopeInit() {
             $('.project_items').isotope({
                 itemSelector: '.item',
@@ -71,11 +93,14 @@
 
         //06. magnific Popup Initialize
         function magnificPopupInit() {
-            $('.content a').magnificPopup({
+            $('.popup-section a').magnificPopup({
                 type: 'image',
                 gallery: {
                     enabled: true
-                }
+                },
+                zoom: {
+                enabled: true}, 
+
             });
         }
         magnificPopupInit();

@@ -59,6 +59,7 @@ p{
 	font-family: 'Heebo', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
+	color: #a2a0a0;
 }
 .f_color{
 	color: #FFFF00;
@@ -75,6 +76,8 @@ p{
 	color: #ffffff;
 	position: relative;
 	z-index: 1;
+	border: none;
+	display: inline-block;
   }
   .button::before{
 	position: absolute;
@@ -1109,6 +1112,51 @@ a.nav-link {
 		display: inline-block;
 		opacity: 0;
 	  }
-	  .portfolio-area{
+	  .portfolio{
+		  padding: 10rem;
 		  margin-top: 10rem;
+		  background-color: #111;
+	  }
+	  .portfolio-area li{
+		margin-left: 1.5rem;
+	  }
+	  .portfolio-area li:first-child{
+		margin: 0rem;
+	  }
+	  .portfolio-area .grid-item img{
+		  width: 350px;
+		  height: 230px;
+		  object-fit: cover;
+		  filter: grayscale(6.5);
+		  opacity: 0.5;
+		  transition: .4s;
+	  }
+	  .portfolio-area .grid-item img:hover{
+		filter: grayscale(0);
+		opacity: 1;
+	  }
+	  /* contact area  */
+	  .contact-area .contact{
+		  background-color: #111;
+		  padding: 10rem;
+	  }
+	  .contact-area .inputbox{
+		width: 100%;
+		background-color: black;
+		border: 2px solid #000;
+		transition: .4s;
+		margin-bottom: 30px;
+		padding: 1.5rem;
+		color: #ffffff;
+		font-size: 1.5rem;
+	  }
+	  .contact-area .inputbox:hover{
+		  border: 2px solid #FFFF00;
+	  }
+	  textarea{
+		  min-height: 200px;
+	  }
+	  /* footer area  */
+	  .footer-text{
+		  margin: 6rem;	
 	  }
