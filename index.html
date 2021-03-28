@@ -17,8 +17,8 @@
     <!-- all css here -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />  
     <link href="css/helper.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -57,22 +57,22 @@
                     <!--menu start-->
                     <ul id="menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
+                            <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About Us</a>
+                            <a href="#about" class="nav-link">About Us</a>
                         </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">Service</a>
+                            <a href="#service" class="nav-link">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Portfolio</a>
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Blog</a>
+                            <a href="#blog" class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link mr-0">Contact</a>
+                            <a href="#contact" class="nav-link mr-0">Contact</a>
                         </li>
                     </ul>
                     <!--menu end-->
@@ -89,23 +89,22 @@
                         <!--menu start-->
                         <ul>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                                <a href="#home" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Team</a>
+                                <a href="#about" class="nav-link">About Us</a>
                             </li>
-
                             <li class="nav-item">
-                                <a href="#" class="nav-link">News</a>
+                                <a href="#service" class="nav-link">Service</a>
                             </li>
                               <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="#portfolio" class="nav-link">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Sponsors</a>
+                                <a href="#blog" class="nav-link">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
+                                <a href="#contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -117,7 +116,7 @@
     <!-- end header -->
     <main>
         <!-- slider area  -->
-        <div class="slider-area" style="background-image: url(img/bg1.jpg);">
+        <div class="slider-area" style="background-image: url(img/bg2.jpg);" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -134,18 +133,18 @@
             </div>
         </div>
         <!-- about area  -->
-        <div class="about-area">
+        <div class="about-area" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="about">
                             <div class="row justify-content-center align-items-center">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-12 img-middle">
                                     <div class="about-img">
-                                        <img src="img/aaahhgjh.jpg" alt="" class="img-fluid">
+                                        <img src="img/a.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="col-lg-7">
+                                <div class="col-lg-7 col-md-12">
                                     <div class="about-text">
                                         <h3 class="mb_20">About Us</h3>
                                         <p class="mb_20">I am <strong>Satayjit Biswas</strong>, web developer from Bangladesh . I have rich experience in web site design and building and customization, also I am good at WordPress.</p>
@@ -200,7 +199,7 @@
             </div>
         </div>
         <!-- Our services  -->
-        <div class="our-services">
+        <div class="our-services" id="service">
             <div class="container">
                 <div class="service-text">
                     <h4 class="ml5 text-center">
@@ -208,13 +207,13 @@
                         <span class="line line1"></span>
                         <span class="letters letters-left">Our</span>
                         <span class="letters ampersand"></span>
-                        <span class="letters letters-right">Services .</span>
+                        <span class="letters letters-right">Services</span>
                         <span class="line line2"></span>
                         </span>
                     </h4>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="fal fa-laptop"></i></span>
                             <h3>
@@ -225,7 +224,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="fal fa-pencil-paintbrush"></i></span>
                             <h3>
@@ -236,7 +235,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="fal fa-code"></i></span>
                             <h3>
@@ -247,7 +246,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="far fa-mobile"></i></span>
                             <h3>
@@ -258,7 +257,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="fas fa-headset"></i></span>
                             <h3>
@@ -269,7 +268,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <span><i class="fal fa-cogs"></i></span>
                             <h3>
@@ -288,28 +287,28 @@
             <div class="counter">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="counter-box text-center">
                                 <i class="fal fa-user"></i>
                                 <span class="count-up">240</span>
                                 <h3>Happy Clients</h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="counter-box text-center">
                                 <i class="fal fa-handshake"></i>
                                 <span class="count-up">360</span>
                                 <h3>Project Done</h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="counter-box text-center">
                                 <i class="fal fa-comment-alt-smile"></i>
                                 <span class="count-up">120</span>
                                 <h3>Total Review</h3>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="counter-box text-center">
                                 <i class="fal fa-history"></i>
                                 <span class="count-up">760</span>
@@ -321,7 +320,7 @@
             </div>
         </div> 
         <!-- portfolio area  -->
-        <div class="portfolio-area">
+        <div class="portfolio-area" id="portfolio">
             <div class="container">
                 <div class="portfolio">
                     <div class="portfolio-text">
@@ -330,7 +329,7 @@
                             <span class="line line1"></span>
                             <span class="letters letters-left">Our</span>
                             <span class="letters ampersand"></span>
-                            <span class="letters letters-right">Portfolio .</span>
+                            <span class="letters letters-right">Portfolio</span>
                             <span class="line line2"></span>
                             </span>
                         </h4>
@@ -368,33 +367,33 @@
                         </div>
                         
                         <div class="col-md-12 mt_40">
-                            <div class="rows grid popup-section">
-                                <div class="col-md-4 grid-item logic mb_30">
+                            <div class="row grid popup-section">
+                                <div class="col-md-4 col-6 grid-item logic mb_30">
                                     <a href="img/img_5.jpg" target="_blank">
                                         <img src="img/img_5.jpg" alt="" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-md-4 grid-item  Web-Design">
+                                <div class="col-md-4 col-6 grid-item  Web-Design mb_30">
                                     <a href="img/img_5.jpg" target="_blank">
                                         <img src="img/img_5.jpg" alt="" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-md-4 grid-item code">
+                                <div class="col-md-4 col-6 grid-item code mb_30">
                                     <a href="img/img_5.jpg" target="_blank">
                                         <img src="img/img_5.jpg" alt="" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-md-4 grid-item ui">
+                                <div class="col-md-4 col-6 grid-item ui mb_30">
                                     <a href="img/img_1.jpg" target="_blank">
                                         <img src="img/img_1.jpg" alt="" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-md-4 grid-item ux">
+                                <div class="col-md-4 col-6 grid-item ux mb_30">
                                     <a href="img/img_1.jpg" target="_blank">
                                         <img src="img/img_1.jpg" alt="" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-md-4 grid-item idea">
+                                <div class="col-md-4 col-6 grid-item idea mb_30">
                                     <a href="img/img_1.jpg" target="_blank">
                                         <img src="img/img_1.jpg" alt="" class="img-fluid">
                                     </a>
@@ -405,10 +404,272 @@
                 </div>
             </div>
         </div>
+        <!-- Blog area -->
+        <div class="blog-area" id="blog">
+            <div class="container">
+                <div class="blog-text">
+                    <h4 class="ml7 text-center">
+                        <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters letters-left">Our</span>
+                        <span class="letters ampersand"></span>
+                        <span class="letters letters-right">Blog</span>
+                        <span class="line line2"></span>
+                        </span>
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper-container blog-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="blog-box">
+                                        <div class="blog-img">
+                                            <img src="img/img_6.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="blog-details">
+                                            <span class="blog-date mr_5">26/03/21</span>
+                                            <span class="blog-slg">html</span>
+                                            <div class="blog-title">
+                                                <h3 class="mt_15 mb_15">
+                                                    <a href="#">
+                                                        How to Install Wordpress on your PC Too Easy Step (খুব সহজেই কিভাবে ওয়ার্ডপ্রেস ইন্সটল করবেন....)
+                                                    </a>
+                                                    
+                                                </h3>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ....
+                                                </p>
+                                                <div class="arrow mt_5 text-right">
+                                                    <a href="#">
+                                                        <i class="fal fa-long-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-box">
+                                        <div class="blog-img">
+                                            <img src="img/img_5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="blog-details">
+                                            <span class="blog-date mr_5">26/03/21</span>
+                                            <span class="blog-slg">html</span>
+                                            <div class="blog-title">
+                                                <h3 class="mt_15 mb_15">
+                                                    <a href="#">
+                                                        How to Install Wordpress on your PC Too Easy Step (খুব সহজেই কিভাবে ওয়ার্ডপ্রেস ইন্সটল করবেন....)
+                                                    </a>
+                                                    
+                                                </h3>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ....
+                                                </p>
+                                                <div class="arrow mt_5 text-right">
+                                                    <a href="#">
+                                                        <i class="fal fa-long-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-box">
+                                        <div class="blog-img">
+                                            <img src="img/img_1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="blog-details">
+                                            <span class="blog-date mr_5">26/03/21</span>
+                                            <span class="blog-slg">html</span>
+                                            <div class="blog-title">
+                                                <h3 class="mt_15 mb_15">
+                                                    <a href="#">
+                                                        How to Install Wordpress on your PC Too Easy Step (খুব সহজেই কিভাবে ওয়ার্ডপ্রেস ইন্সটল করবেন....)
+                                                    </a>
+                                                    
+                                                </h3>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ....
+                                                </p>
+                                                <div class="arrow mt_5 text-right">
+                                                    <a href="#">
+                                                        <i class="fal fa-long-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-box">
+                                        <div class="blog-img">
+                                            <img src="img/img_5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="blog-details">
+                                            <span class="blog-date mr_5">26/03/21</span>
+                                            <span class="blog-slg">html</span>
+                                            <div class="blog-title">
+                                                <h3 class="mt_15 mb_15">
+                                                    <a href="#">
+                                                        How to Install Wordpress on your PC Too Easy Step (খুব সহজেই কিভাবে ওয়ার্ডপ্রেস ইন্সটল করবেন....)
+                                                    </a>
+                                                    
+                                                </h3>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ....
+                                                </p>
+                                                <div class="arrow mt_5 text-right">
+                                                    <a href="#">
+                                                        <i class="fal fa-long-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-box">
+                                        <div class="blog-img">
+                                            <img src="img/img_5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="blog-details">
+                                            <span class="blog-date mr_5">26/03/21</span>
+                                            <span class="blog-slg">html</span>
+                                            <div class="blog-title">
+                                                <h3 class="mt_15 mb_15">
+                                                    <a href="#">
+                                                        How to Install Wordpress on your PC Too Easy Step (খুব সহজেই কিভাবে ওয়ার্ডপ্রেস ইন্সটল করবেন....)
+                                                    </a>
+                                                    
+                                                </h3>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ....
+                                                </p>
+                                                <div class="arrow mt_5 text-right">
+                                                    <a href="#">
+                                                        <i class="fal fa-long-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="swiper-button-next blog-swiper"></div>
+                        <div class="swiper-button-prev blog-swiper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hire area  -->
+        <div class="hire-area">
+            <video autoplay loop id="myVideo">
+                <source src="img/Video.mp4" type="video/mp4">
+            </video>
+            <div class="container text-center">
+                <h3 class="mb_40">Hi , I am freelancer</h3>
+                <a class="button" href="#">
+                    <span class="left_border"></span> 
+                    hire me
+                    <span class="right_border"></span>
+                </a>
+            </div>
+            
+        </div>
+        <!-- client review area -->
+        <div class="client-review-area">
+            <div class="container">
+                <h4 class="ml8 text-center">
+                    <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters letters-left">Client</span>
+                    <span class="letters ampersand"></span>
+                    <span class="letters letters-right">Review</span>
+                    <span class="line line2"></span>
+                    </span>
+                </h4>
+                <div class="row justify-content-center">
+                    <div class=" col-lg-8 col-12">
+                        <div class="swiper-container client">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="client-review-box text-center">
+                                        <div class="client-img">
+                                            <img src="img/aaahhgjh.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="client-name">Mr. Lari Cokko</div>
+                                        <div class="star">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="client-review-box text-center">
+                                        <div class="client-img">
+                                            <img src="img/aaahhgjh.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="client-name">Mr. Lari Cokko</div>
+                                        <div class="star">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="client-review-box text-center">
+                                        <div class="client-img">
+                                            <img src="img/aaahhgjh.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="client-name">Mr. Lari Cokko</div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- contact area -->
-        <div class="contact-area">
+        <div class="contact-area" id="contact">
             <div class="container">
                 <div class="contact">
+                    <div class="contact-text">
+                        <h4 class="ml9 text-center">
+                            <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters letters-left">Contact</span>
+                            <span class="letters ampersand"></span>
+                            <span class="letters letters-right">Me</span>
+                            <span class="line line2"></span>
+                            </span>
+                        </h4>
+                    </div>
                     <form action="#">
                         <div class="row">
                             <div class="col-md-6">
@@ -435,6 +696,26 @@
     <div class="footer-area">
         <div class="container">
             <div class="footer-text text-center">
+                <div class="footer-img">
+                    <img src="img/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
                 <p>
                     Copyright
                     <script type="text/javascript">
@@ -458,6 +739,8 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

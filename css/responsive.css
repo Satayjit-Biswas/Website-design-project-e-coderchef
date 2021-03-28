@@ -11,11 +11,32 @@
 	}
 }
 
-@media (max-width: 1199px) { 
-	
+@media (max-width: 1199.98px) {
+	h3 {
+		font-size: 2.4rem;
+	} 
+	.about-img {
+		height: 295px;
+		width: 295px;
+	}
+	.about-img::after {
+		height: 320px;
+		width: 320px;
+	}
+	.about-img::before {
+		height: 320px;
+		width: 320px;
+	}
+	.blog-img img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.about, .portfolio, .contact-area .contact {
+		padding: 10rem 7rem;
+	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
 	#menu{
 		display: none;
 	}
@@ -26,17 +47,123 @@
 	.ofcavas-menu {
 		display: block;
 	}
-	
+	.about-area .img-middle{
+		display: flex;
+		justify-content: center;
+		top: 20px;
+	}
+	.button {
+		padding: 10px 26px;
+	}
+	.about-text {
+		margin-left: 25px;
+		margin-top: 120px;
+	}
+	.counter-box span {
+		font-size: 3rem;
+		margin: 1.2rem 0 .8rem 0;
+	}
+	.counter-box {
+		padding: 1rem;
+	}
+	.counter-box i {
+		font-size: 3rem;
+	}
+	.portfolio-area .grid-item img {
+		width: auto;
+		height: 140px;
+	}
+	.client-review-area .client-review-box {
+		padding: 5rem 4rem;
+	}
 }
 
 /*Medium devices (tablets, 767px and down)*/
-@media (max-width: 767px) {
-	
+@media (max-width: 767.98px) {
+	.about-area {
+		margin-top: 7rem;
+	}
+	.about-area, .hire-area, .client-review-area{
+		margin-bottom: 7rem;
+	}
+	h4 {
+		margin-bottom: 5rem;
+	}
+	.about, .portfolio, .contact-area .contact {
+		padding: 7rem 2rem;
+	}
+	.portfolio {
+		margin-top: 7rem;
+	}
+	.blog-area {
+		margin: 7rem 0;
+	}
+	.client-review-area h4 {
+		margin-bottom: 2rem;
+	}
+	.portfolio-area h4 {
+		margin-bottom: 3.5rem;
+	}
+	.portfolio-area .grid-item img {
+		width: 100%;
+		height: 150px;
+	}
+	.counter {
+		padding: 2rem 0;
+	}
+	.client-review-area .client-review-box {
+		margin-top: 7rem;
+	}
+	.client-img img {
+		top: -95px;
+	}
 }
 
 /*Small devices (landscape phones, 575px and down)*/
-@media (max-width: 575px) {
-	
+@media (max-width: 575.98px) {
+	html{
+		font-size:9px;
+	}
+	.about-img::after {
+		height: 255px;
+		width: 255px;
+	}
+	.about-img::before {
+		height: 255px;
+		width: 255px;
+	}
+	.about-img {
+		height: 200px;
+		width: 238px;
+	}
+	.about-text {
+		margin-left: 10px;
+		margin-top: 145px;
+	}
+	.about-img::after {
+		left: -9px;
+	}
+	.about-img::before {
+		left: -9px;
+	}
 }
-
+@media (max-width: 415.98px) {
+	.about-img::before {
+		height: 200px;
+		width: 200px;
+	}
+	.about-img::after {
+		height: 200px;
+		width: 200px;
+	}
+	.about-img {
+		width: 186px;
+	}
+	.about-text {
+		margin-top: 90px;
+	}
+	.service-box {
+		padding: 40px 30px;
+	}
+}
 

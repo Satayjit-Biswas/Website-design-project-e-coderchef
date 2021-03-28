@@ -83,6 +83,14 @@
             }, 1500);
         });
 
+        $('#menu li a').bind('click', function(event) {
+            var $anchor = $(this);
+            var headerH = '70';
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+            }, 1200, 'easeInSine');
+            event.preventDefault();
+        });
         // Hamburger-menu
         $('.hamburger-menu').on('click', function () {
             $('.hamburger-menu .line-top, .ofcavas-menu').toggleClass('current');
@@ -322,4 +330,177 @@ $('.portfolio-area').on('inview', function(event, visible) {
         })
         $(this).unbind('inview');
     }
+});
+$('.blog-area').on('inview', function(event, visible) {
+    if (visible) {
+        // service text 
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml7 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+        })
+        .add({
+        targets: '.ml7 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        })
+        .add({
+        targets: '.ml7 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        .add({
+        targets: '.ml7 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        })
+        .add({
+        targets: '.ml7 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        $(this).unbind('inview');
+    }
+});
+$('.client-review-area').on('inview', function(event, visible) {
+    if (visible) {
+        // service text 
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml8 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+        })
+        .add({
+        targets: '.ml8 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        })
+        .add({
+        targets: '.ml8 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        .add({
+        targets: '.ml8 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        })
+        .add({
+        targets: '.ml8 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        $(this).unbind('inview');
+    }
+});
+$('.contact-area').on('inview', function(event, visible) {
+    if (visible) {
+        // service text 
+        anime.timeline({loop: false})
+        .add({
+        targets: '.ml9 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+        })
+        .add({
+        targets: '.ml9 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        })
+        .add({
+        targets: '.ml9 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        .add({
+        targets: '.ml9 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        })
+        .add({
+        targets: '.ml9 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        })
+        $(this).unbind('inview');
+    }
+});
+
+var swiper = new Swiper('.swiper-container.blog-swiper', {
+    slidesPerView: 3,
+    loop: false,
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next.blog-swiper',
+      prevEl: '.swiper-button-prev.blog-swiper',
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+    }
+});
+var swiper = new Swiper('.swiper-container.client', {
+    slidesPerView: 1,
+    loop: false,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
 });
