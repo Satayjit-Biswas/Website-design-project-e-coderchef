@@ -55,6 +55,9 @@
 	.button {
 		padding: 10px 26px;
 	}
+	.portfolio-area .button {
+		padding: 7px 18px;
+	}
 	.about-text {
 		margin-left: 25px;
 		margin-top: 120px;
@@ -75,6 +78,9 @@
 	}
 	.client-review-area .client-review-box {
 		padding: 5rem 4rem;
+	}
+	.contact-area .inputbox {
+		padding: .8rem;
 	}
 }
 
@@ -146,6 +152,14 @@
 	.about-img::before {
 		left: -9px;
 	}
+	.portfolio-area .button {
+		padding: 3px 15px;
+		font-size: 1.3rem;
+		margin-left: 5px !important;
+	}
+	.address span {
+		min-width: 120px;
+	}
 }
 @media (max-width: 415.98px) {
 	.about-img::before {
@@ -164,6 +178,45 @@
 	}
 	.service-box {
 		padding: 40px 30px;
+	}
+	.address span {
+		min-width: 80px;
+	}
+	.footer-icon a{
+		width: 37px;
+		height:37px;
+		border-radius: 5px;
+		background-color: #111;
+		display: inline-block;
+		color: #ffffff;
+		margin:0 15px 0 0;
+		transform: rotate(45deg);
+		text-align: center;
+		border: 2px solid #111;
+		transition: .3s;
+	}
+	.footer-icon a:hover{
+	  transform: rotate(45deg) scale(1.09);
+	  border: 2px solid #FFFF00;
+	  box-shadow: 0px 0px 8px 1px #FFFF00;
+	  
+  }
+	.footer-icon a:last-child{
+		margin: 0;
+	}
+	.footer-icon a i{
+		line-height: 32px;
+		transform: rotate(-45deg);
+		font-size: 14px;
+	}
+	
+}
+@media (max-width: 330.98px) {
+	.address span {
+		min-width: 68px;
+	}
+	.footer-icon a{
+		margin:0 10px 0 0;
 	}
 }
 
