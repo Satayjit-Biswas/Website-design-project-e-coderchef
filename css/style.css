@@ -1286,7 +1286,7 @@ a.nav-link {
     	font-family: 'Font Awesome 5 Pro';
 	}
 	  .swiper-button-prev.blog-swiper {
-		top: -28px;
+		top: -40px;
 		right: 80px;
 		left: auto;
 	}
@@ -1299,7 +1299,7 @@ a.nav-link {
 	.swiper-button-next.blog-swiper	{
 		right: 25px;
 		left: auto;
-		top: -28px;
+		top: -40px;
 	}
 	.swiper-button-next.blog-swiper,.swiper-button-prev.blog-swiper{
 		outline: none;
