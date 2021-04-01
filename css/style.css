@@ -128,7 +128,7 @@ p{
 	  height: 100% !important;
   }
 body {
-	color: #fff;
+	color: #d0d0d0;
 	line-height: 26px;
 	font-family: 'Roboto', sans-serif;
 	background-color: #000000;
@@ -159,7 +159,7 @@ textarea:focus{
 	left: 0;
 	top: 0;
 	z-index: 9999;
-	background: #fff;
+	background: #000000;
 }
 
 .loader_34 {
@@ -235,7 +235,7 @@ textarea:focus{
 	height: 100%;
 	border-style: solid;
 	/* Spinner Color */
-	border-color: #f9fb7600 #f9fb7600 transparent;
+	border-color: #f9fb76 #f9fb76 transparent;
 	border-radius: 50%;
 	border-width: 6px;
 }
@@ -503,10 +503,6 @@ header {
 
 /*sticky START CSS*/
 header.sticky {
-	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
 }
 .sticky{
@@ -527,7 +523,7 @@ header.sticky {
 #menu li a {
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #d0d0d0;
 	margin: 0 22px;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -933,6 +929,7 @@ a.nav-link {
 	font-size: 2.2rem;
 	color: #FFFF00;
 	font-weight: 600;
+	letter-spacing: 1.2px;
 }
 .typewrite:hover{
 	color: #FFFF00;
@@ -1034,8 +1031,8 @@ a.nav-link {
 	margin: auto;
 	height: 3px;
 	width: 100%;
-	background-color: #ffffff;
-	transform-origin: 0.5 0;
+	background-color: #fff;
+	transform-origin: 50% 0%;
   }
   
   .ml5 .ampersand {
@@ -1139,8 +1136,8 @@ a.nav-link {
 		margin: auto;
 		height: 3px;
 		width: 100%;
-		background-color: #ffffff;
-		transform-origin: 0.5 0;
+		background-color: #fff;
+		transform-origin: 50% 0%;
 	  }
 	  
 	  .ml6 .ampersand {
@@ -1212,8 +1209,8 @@ a.nav-link {
 		margin: auto;
 		height: 3px;
 		width: 100%;
-		background-color: #ffffff;
-		transform-origin: 0.5 0;
+		background-color: #fff;
+		transform-origin: 50% 0%;
 	  }
 	  
 	  .ml7 .ampersand {
@@ -1355,8 +1352,8 @@ a.nav-link {
 		margin: auto;
 		height: 3px;
 		width: 100%;
-		background-color: #ffffff;
-		transform-origin: 0.5 0;
+		background-color: #fff;
+		transform-origin: 50% 0%;
 	  }
 	  
 	  .ml8 .ampersand {
@@ -1438,8 +1435,8 @@ a.nav-link {
 		margin: auto;
 		height: 3px;
 		width: 100%;
-		background-color: #ffffff;
-		transform-origin: 0.5 0;
+		background-color: #fff;
+		transform-origin: 50% 0%;
 	  }
 	  
 	  .ml9 .ampersand {
